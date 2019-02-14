@@ -91,6 +91,7 @@ lazy val commonSettings = Seq(
     "io.chrisdavenport"           %% "ember-server"               % emberV,
 
     "io.chrisdavenport"           %% "linebacker"                 % lineBackerV,
+    "io.chrisdavenport"           %% "system-effect"              % "0.0.3",
 
     "io.chrisdavenport"           %% "fuuid"                      % fuuidV,
 
