@@ -109,7 +109,7 @@ lazy val commonSettings = Seq(
 lazy val releaseSettings = {
   import ReleaseTransformations._
   Seq(
-    releasherokuossBuild := true,
+    releaseCrossBuild := true,
     releaseProcess := Seq[ReleaseStep](
       checkSnapshotDependencies,
       inquireVersions,
@@ -158,6 +158,7 @@ lazy val releaseSettings = {
     pomIncludeRepository := { _ =>
       false
     },
+    maintainer := "chris@christopherdavenport.tech",
     pomExtra := {
       <developers>
         {for ((username, name) <- contributors) yield
