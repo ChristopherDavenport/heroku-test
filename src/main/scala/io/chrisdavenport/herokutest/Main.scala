@@ -1,4 +1,4 @@
-package io.chrisdavenport.ecrtest
+package io.chrisdavenport.herokutest
 
 import cats.implicits._
 import cats.effect._

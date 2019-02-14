@@ -28,3 +28,5 @@ jobs:
         provider: heroku
         app: heroku-t-christopherdavenport
         api_key: $HEROKU_AUTH_TOKEN
+    - stage: Test Deploy
+      script: 'curl https://heroku-t-christopherdavenport.herokuapp.com/'
