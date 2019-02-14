@@ -1,0 +1,24 @@
+sudo: required
+language: scala
+
+dist: xenial
+services:
+  - docker
+
+scala:
+  - 2.12.8
+
+before_cache:
+  - find $HOME/.sbt -name "*.lock" -type f -delete
+  - find $HOME/.ivy2/cache -name "ivydata-*.properties" -type f -delete
+
+cache:
+  directories:
+    - $HOME/.ivy2/cache
+    - $HOME/.sbt
+
+jdk:
+  - openjdk8
+
+after_success:
+  - true
